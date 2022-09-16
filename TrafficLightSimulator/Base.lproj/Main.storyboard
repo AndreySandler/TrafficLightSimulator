@@ -19,23 +19,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="ZuI-Ou-3ju">
-                                <rect key="frame" x="120.00000000000001" y="79" width="190.33333333333337" height="639"/>
+                                <rect key="frame" x="120" y="79" width="190.33333333333337" height="639"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ing-E7-fOX">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ing-E7-fOX">
                                         <rect key="frame" x="0.0" y="0.0" width="190.33333333333334" height="190.33333333333334"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ing-E7-fOX" secondAttribute="height" multiplier="1:1" id="oh3-bK-YGr"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuA-LB-1ym">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuA-LB-1ym">
                                         <rect key="frame" x="0.0" y="224.33333333333331" width="190.33333333333334" height="190.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="cuA-LB-1ym" secondAttribute="height" multiplier="1:1" id="Rdw-bq-FqU"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj3-Va-tVM">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj3-Va-tVM">
                                         <rect key="frame" x="0.0" y="448.66666666666657" width="190.33333333333334" height="190.33333333333331"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
@@ -55,6 +55,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" systemColor="systemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressingStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZX-MX-iA0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -67,6 +70,12 @@
                             <constraint firstItem="ZuI-Ou-3ju" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tSf-nA-IxF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startButton" destination="OM7-BZ-PZp" id="wr7-Sp-e3Z"/>
+                        <outlet property="trafficLightGreenView" destination="yj3-Va-tVM" id="muU-1J-3IH"/>
+                        <outlet property="trafficLightRedView" destination="ing-E7-fOX" id="FRz-6l-Sbw"/>
+                        <outlet property="trafficLightYellowVIew" destination="cuA-LB-1ym" id="weL-GH-V8C"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
