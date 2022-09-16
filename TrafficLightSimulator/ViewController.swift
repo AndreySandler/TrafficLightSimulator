@@ -13,8 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet var trafficLightYellowVIew: UIView!
     @IBOutlet var trafficLightGreenView: UIView!
     @IBOutlet var startButton: UIButton!
+    @IBOutlet var counterLabel: UILabel!
     
-    var counter = 0
+    private var counter = 0
+    private var labelCounter = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +28,9 @@ class ViewController: UIViewController {
     
     @IBAction func pressingStartButton() {
         startButton.setTitle("Next", for: .normal)
+        counterLabel.text = String(labelCounter)
         counter += 1
+        labelCounter += 1
         
         if counter == 1 {
             trafficLightGreenView.alpha = 0.3
