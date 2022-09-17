@@ -31,6 +31,9 @@
                             <constraint firstItem="Jyb-4b-TBq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="jES-13-MuH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="Ze5-6b-2t3" id="KOB-pd-SDG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

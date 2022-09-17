@@ -59,7 +59,7 @@
                                     <action selector="pressingStartButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZX-MX-iA0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVy-3C-k4A">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVy-3C-k4A">
                                 <rect key="frame" x="198.5" y="730" width="17" height="33"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
@@ -79,7 +79,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="counterLabel" destination="zVy-3C-k4A" id="kDQ-0q-rJD"/>
+                        <outlet property="scoreLabel" destination="zVy-3C-k4A" id="A9Y-EC-rlO"/>
                         <outlet property="startButton" destination="OM7-BZ-PZp" id="wr7-Sp-e3Z"/>
                         <outlet property="trafficLightGreenView" destination="yj3-Va-tVM" id="muU-1J-3IH"/>
                         <outlet property="trafficLightRedView" destination="ing-E7-fOX" id="FRz-6l-Sbw"/>
