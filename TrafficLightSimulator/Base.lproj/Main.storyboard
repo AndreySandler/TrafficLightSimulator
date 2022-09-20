@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
@@ -15,37 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLightSimulator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="ZuI-Ou-3ju">
-                                <rect key="frame" x="116" y="68" width="182" height="614"/>
-                                <subviews>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ing-E7-fOX">
-                                        <rect key="frame" x="0.0" y="0.0" width="182" height="182"/>
-                                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="ing-E7-fOX" secondAttribute="height" multiplier="1:1" id="oh3-bK-YGr"/>
-                                        </constraints>
-                                    </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuA-LB-1ym" userLabel="Traffic Light Yellow Vew">
-                                        <rect key="frame" x="0.0" y="216" width="182" height="182"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="cuA-LB-1ym" secondAttribute="height" multiplier="1:1" id="Rdw-bq-FqU"/>
-                                        </constraints>
-                                    </view>
-                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj3-Va-tVM">
-                                        <rect key="frame" x="0.0" y="432" width="182" height="182"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="yj3-Va-tVM" secondAttribute="height" multiplier="1:1" id="NLC-bs-jDM"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OM7-BZ-PZp">
-                                <rect key="frame" x="100" y="789" width="214" height="53"/>
+                                <rect key="frame" x="100" y="745" width="193" height="53"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="jae-pz-rlc"/>
@@ -60,11 +34,31 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zVy-3C-k4A">
-                                <rect key="frame" x="198.5" y="730" width="17" height="33"/>
+                                <rect key="frame" x="188" y="686.33333333333337" width="17" height="32.666666666666629"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="ZuI-Ou-3ju">
+                                <rect key="frame" x="114.66666666666667" y="79" width="163.66666666666663" height="559"/>
+                                <subviews>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ing-E7-fOX">
+                                        <rect key="frame" x="0.0" y="0.0" width="163.66666666666666" height="163.66666666666666"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ing-E7-fOX" secondAttribute="height" multiplier="1:1" id="sW3-gQ-fI0"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuA-LB-1ym" userLabel="Traffic Light Yellow Vew">
+                                        <rect key="frame" x="0.0" y="197.66666666666669" width="163.66666666666666" height="163.66666666666669"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    </view>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj3-Va-tVM">
+                                        <rect key="frame" x="0.0" y="395.33333333333331" width="163.66666666666666" height="163.66666666666669"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
@@ -72,18 +66,18 @@
                             <constraint firstItem="zVy-3C-k4A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DlO-XX-d6X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OM7-BZ-PZp" secondAttribute="bottom" constant="20" id="Ie6-Qq-t2f"/>
                             <constraint firstItem="OM7-BZ-PZp" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Ijp-Vi-ed5"/>
+                            <constraint firstItem="OM7-BZ-PZp" firstAttribute="top" secondItem="ZuI-Ou-3ju" secondAttribute="bottom" constant="107" id="UCh-Zi-IDV"/>
                             <constraint firstItem="OM7-BZ-PZp" firstAttribute="top" secondItem="zVy-3C-k4A" secondAttribute="bottom" constant="26" id="XX3-A0-iXQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="OM7-BZ-PZp" secondAttribute="trailing" constant="100" id="a39-5x-2ch"/>
-                            <constraint firstItem="OM7-BZ-PZp" firstAttribute="top" secondItem="yj3-Va-tVM" secondAttribute="bottom" constant="107" id="lZ0-Gh-xsd"/>
                             <constraint firstItem="ZuI-Ou-3ju" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="tSf-nA-IxF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="lightGreenView" destination="yj3-Va-tVM" id="BA3-gh-Ym4"/>
+                        <outlet property="lightRedView" destination="ing-E7-fOX" id="82I-mY-lga"/>
+                        <outlet property="lightYellowVIew" destination="cuA-LB-1ym" id="Z6t-FR-UqD"/>
                         <outlet property="scoreLabel" destination="zVy-3C-k4A" id="A9Y-EC-rlO"/>
                         <outlet property="startButton" destination="OM7-BZ-PZp" id="wr7-Sp-e3Z"/>
-                        <outlet property="trafficLightGreenView" destination="yj3-Va-tVM" id="muU-1J-3IH"/>
-                        <outlet property="trafficLightRedView" destination="ing-E7-fOX" id="FRz-6l-Sbw"/>
-                        <outlet property="trafficLightYellowVIew" destination="cuA-LB-1ym" id="weL-GH-V8C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

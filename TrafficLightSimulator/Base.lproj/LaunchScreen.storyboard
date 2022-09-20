@@ -15,25 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, User!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jyb-4b-TBq">
-                                <rect key="frame" x="88" y="125" width="238.5" height="38.5"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="33"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <constraints>
-                            <constraint firstItem="Jyb-4b-TBq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GUV-2G-PuB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jyb-4b-TBq" secondAttribute="trailing" constant="16" id="h8R-fu-s6h"/>
-                            <constraint firstItem="Jyb-4b-TBq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ixd-rI-i6p"/>
-                            <constraint firstItem="Jyb-4b-TBq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="77" id="jES-13-MuH"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="greetingLabel" destination="Ze5-6b-2t3" id="KOB-pd-SDG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
